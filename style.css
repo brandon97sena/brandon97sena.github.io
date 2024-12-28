@@ -1,0 +1,42 @@
+/* Custom styles for Resume website */
+body {
+  font-family: 'Courier New', monospace;
+  color: #eaeaea;  /* Light text on dark background */
+  background-color: #111;
+}
+
+h1, h2, h3 {
+  color: #f4f4f4;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+}
+
+footer p {
+  color: #999;
+}
+
+a {
+  color: #1e90ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Custom Links section */
+#contact a {
+  color: #f4f4f4;
+}
