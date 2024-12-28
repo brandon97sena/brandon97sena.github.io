@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Your Name - Resume"
+title: "Brandon Sena - Resume"
 ---
 
 # Resume - Your Name
@@ -39,4 +39,4 @@ title: "Your Name - Resume"
 - **FBLA State Finalist** in Business Ethics (2016) and Securities & Investments (2017)
 
 ## CONTACT
-Feel free to reach out via email at [your.email@example.com](mailto:your.email@example.com).
+Feel free to reach out via email at [brandon97sena@gmail.com](mailto:brandon97sena@gmail.com).
