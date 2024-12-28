@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body style="background-color: #111; color: #eaeaea; font-family: 'Courier New', monospace;">
+
+  {% include header.html %}
+
+  <main style="padding: 20px;">
+    {{ content }}
+  </main>
+
 ---
 layout: default
 title: "Brandon Sena - Resume"
