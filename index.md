@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Sena's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #111; color: #eaeaea; font-family: 'Courier New', monospace;">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  {% include header.html %}
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Ever since I was a child, I have been a hustler with an appreciation for business and technology. When I was only 14 years old, I was already using my determination and ingenuity to make money. Whether it was shoveling snow, landscaping, or jailbreaking electronics, I always had a techy entrepreneurial spirit inside me. I have grown a lot since then.</p>
+            <p>I graduated from Rutgers University in 2022 with a double major in Finance and Management Information Systems. During my time at Rutgers, I was an active student on campus, involved in several professional and fraternal clubs.</p>
+            <p>Currently, I work at PwC as a Digital Assurance and Transparency Associate (IT Audit), gaining valuable experience with clients and various business information systems like SAP, Salesforce, Oracle, SailPoint, and Workday. I also run Sena Solutions LLC, providing web development, PPC advertising, and social media management services. One of my significant projects is Lyndhurst07071.com, a political news website with 8,000 monthly visitors.</p>
+            <p>In my free time, I enjoy coding, gardening, and volunteering. Notably, I spearheaded efforts to build a gazebo in Lewandowski Park in Lyndhurst, NJ, as a community service project. With a passion for people, technology, data, and finance, I aspire to find a role that incorporates all these aspects.</p>
+        </section>
 
-  <main style="padding: 20px;">
-    {{ content }}
-  </main>
+        <section id="resume">
+            <h2>Resume</h2>
+            <h3>Experience</h3>
+            <ul>
+                <li><strong>PwC</strong> - Digital Assurance & Transparency Associate (Jul 2022 - Present)</li>
+                <li><strong>Sena Solutions LLC</strong> - Web Developer and Owner (Aug 2015 - Present)</li>
+                <li><strong>Project Innovate Newark</strong> - Developer Intern & Instructor (Dec 2021 - Jul 2022)</li>
+                <li><strong>EthAum Venture Partners</strong> - Venture Associate (Jun 2021 - Sep 2021)</li>
+            </ul>
+            <h3>Education</h3>
+            <p><strong>Rutgers University</strong> - Double Major in Finance and Management Information Systems (2018 - 2022)</p>
+            <h3>Certifications</h3>
+            <ul>
+                <li>Certified Information Systems Auditor (CISA) (Pending Work Certification)</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                <li>IT Security Policies & Procedures</li>
+                <li>Project Management</li>
+                <li>Digital Marketing</li>
+                <li>Web Development</li>
+                <li>Analytics</li>
+            </ul>
+        </section>
 
----
-layout: default
-title: "Brandon Sena - Resume"
----
+        <section id="projects">
+            <h2>Side Projects</h2>
+            <ul>
+                <li><a href="https://lyndhurst07071.com" target="_blank">Lyndhurst07071.com</a> - A local political news website with 8,000 monthly visitors.</li>
+                <li><a href="https://github.com/username/project-name" target="_blank">Other GitHub Projects</a> - Explore my coding projects on GitHub.</li>
+            </ul>
+        </section>
 
-# Resume - Your Name
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Welcome to my blog where I share personal thoughts, career insights, and technical tips. Stay tuned for new posts!</p>
+        </section>
+    </main>
 
-## EDUCATION
-**Rutgers University, Rutgers Business School** - *May 2022*  
-- Finance Bachelor of Science  
-- Management Information Systems Bachelor of Science
-
-## PROFESSIONAL EXPERIENCE
-
-### Experienced Associate, PricewaterhouseCoopers (July 2022 - Oct 2024)
-- Evaluated the design and operating effectiveness of IT controls, providing insights and recommendations on business processes and technology, including emerging technologies such as cloud and artificial intelligence.
-- Conducted risk assessments, identified key risks, and optimized controls for SOX compliance, further improving security and IT environment controls.
-- Collaborated with clients to develop project plans, building strong client relationships, and demonstrating a deep understanding of their business needs.
-- Oversaw the audit engagement and coached team members, ensuring timely completion of projects within budget while reporting project progress to management.
-- Developed timesaving, user-friendly tools and automations for the team using Excel VBA and Python, including folder mapping, folder creation, common file conversions (e.g., email to PDF), and project tracking automations.
-- Worked on a variety of commercial and industrial products and services (CIPS) clients, assisting with integrated audits, SOC 1, 2, & 3 reports, J-SOX reports, and HITRUST engagements.
-
-### Developer Intern & Instructor, Project Innovate Newark (Dec 2021 - July 2022)
-- Served as the head coordinator for the Business Leader in Newark Kids (B.L.I.N.K.) program and designed the curriculum for underprivileged Newark high school students to learn computer science, entrepreneurship, investing, and personal finance.
-- Served as an instructor, reviewing lessons, and providing mentorship to students supporting their skills in computer science and business curriculums.
-- Developed skills in building full-stack applications utilizing Flask, React, and MongoDB.
-
-### Web Developer, Sena Solutions, LLC (Aug 2015 - July 2022)
-- Created simple websites for freelance clients using WordPress and Shopify.
-- Drove clients’ digital advertising strategies by utilizing Pixel Analytics to optimize Facebook ads and running Google ad campaigns (Google Analytics certified).
-
-### Investment Venture Associate Intern, Ethaum Venture Partners (Jun 2021 - Sep 2021)
-- Assisted in enterprise sales strategies including lead generation and customer acquisition. Additionally, refined fundraising materials and pitch decks to facilitate stronger connections between startups and investors.
-
-## SPECIAL PROJECTS AND AWARDS
-- **CISA Exam Passed** (August 2024 - Pending experience requirement)
-- **Google Analytics Certified**
-- **Eagle Scout Project** - Built and funded a gazebo in Lyndhurst Lewandowski Park (2018)
-- **FBLA State Finalist** in Business Ethics (2016) and Securities & Investments (2017)
-
-## CONTACT
-Feel free to reach out via email at [brandon97sena@gmail.com](mailto:brandon97sena@gmail.com).
+    <footer>
+        <p>&copy; 2024 Brandon Sena. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+        <p>Connect with me on <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>.</p>
+    </footer>
+</body>
+</html>
