@@ -4,71 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #444;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #555;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects ul li {
+            margin-bottom: 10px;
+        }
+
+        .projects ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .projects ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="about.html">About Me</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-    </nav>
-    <div class="container">
+    <header>
         <h1>Welcome to My Personal Website</h1>
-        <p>This is the home page. Use the navigation links above to explore more about me, my resume, projects, and blog.</p>
-    </div>
-<body>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! Here, you'll learn more about me and my work.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Ever since I was a child, I have been a hustler with an appreciation for business and technology. When I was only 14 years old, I was already using my determination and ingenuity to make money. Whether it was shoveling snow, landscaping, or jailbreaking electronics, I always had a techy entrepreneurial spirit inside me. I have grown a lot since then.</p>
-            <p>I graduated from Rutgers University in 2022 with a double major in Finance and Management Information Systems. During my time at Rutgers, I was an active student on campus, involved in several professional and fraternal clubs.</p>
-            <p>Currently, I work at PwC as a Digital Assurance and Transparency Associate (IT Audit), gaining valuable experience with clients and various business information systems like SAP, Salesforce, Oracle, SailPoint, and Workday. I also run Sena Solutions LLC, providing web development, PPC advertising, and social media management services. One of my significant projects is Lyndhurst07071.com, a political news website with 8,000 monthly visitors.</p>
-            <p>In my free time, I enjoy coding, gardening, and volunteering. Notably, I spearheaded efforts to build a gazebo in Lewandowski Park in Lyndhurst, NJ, as a community service project. With a passion for people, technology, data, and finance, I aspire to find a role that incorporates all these aspects.</p>
-        </section>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <h3>Experience</h3>
-            <ul>
-                <li><strong>PwC</strong> - Digital Assurance & Transparency Associate (Jul 2022 - Present)</li>
-                <li><strong>Sena Solutions LLC</strong> - Web Developer and Owner (Aug 2015 - Present)</li>
-                <li><strong>Project Innovate Newark</strong> - Developer Intern & Instructor (Dec 2021 - Jul 2022)</li>
-                <li><strong>EthAum Venture Partners</strong> - Venture Associate (Jun 2021 - Sep 2021)</li>
-            </ul>
-            <h3>Education</h3>
-            <p><strong>Rutgers University</strong> - Double Major in Finance and Management Information Systems (2018 - 2022)</p>
-            <h3>Certifications</h3>
-            <ul>
-                <li>Certified Information Systems Auditor (CISA) (Pending Work Certification)</li>
-            </ul>
-            <h3>Skills</h3>
-            <ul>
-                <li>IT Security Policies & Procedures</li>
-                <li>Project Management</li>
-                <li>Digital Marketing</li>
-                <li>Web Development</li>
-                <li>Analytics</li>
-            </ul>
-        </section>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-        <section id="projects">
-            <h2>Side Projects</h2>
-            <ul>
-                <li><a href="https://lyndhurst07071.com" target="_blank">Lyndhurst07071.com</a> - A local political news website with 8,000 monthly visitors.</li>
-                <li><a href="https://github.com/username/project-name" target="_blank">Other GitHub Projects</a> - Explore my coding projects on GitHub.</li>
-            </ul>
-        </section>
-
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Welcome to my blog where I share personal thoughts, career insights, and technical tips. Stay tuned for new posts!</p>
-        </section>
-    </main>
-
+            <button type="submit">Send</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2024 Brandon Sena. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
-        <p>Connect with me on <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>.</p>
+        <p>&copy; 2024 My Personal Website</p>
     </footer>
 </body>
 </html>
